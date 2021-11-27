@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Checkpoint II</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="form-section">
+      <h1>Formulário de Visita</h1>
+
+      <div class="form-wrapper">
+        <form>
+          <div class="input-block">
+            <label for="login-name">Name</label>
+            <input type="name" id="login-name" required />
+          </div>
+          <div class="input-block">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" required />
+          </div>
+          <div class="input-block">
+            <label for="login-telefone">Telefone</label>
+            <input type="telefone" id="login-telefone" required />
+          </div>
+
+          <div class="input-block">
+            <label for="login-data">Data de Nascimento:</label>
+            <input type="date" id="login-data" required />
+          </div>
+          <p>Selecione uma das opções abaixo:</p>
+          <div class="input-idade-container">
+            <div class="menor-idade">
+              <label for="login-menor-idade">Menor de Idade</label>
+              <input type="radio" id="login-menor-idade" name="maior-menor" />
+            </div>
+            <div class="maior-idade">
+              <label for="login-maior-idade">Maior de Idade</label>
+              <input type="radio" id="login-maior-idade" name="maior-menor" />
+            </div>
+          </div>
+
+          <p>Quais os seus pontos de interesse na cidade:</p>
+          <div class="input-block">
+            <select name="pontos" id="pontos">
+              <option value="interesses">Pontos de Interesse</option>
+              <option value="Parque-cidade">Parque da Cidade</option>
+              <option value="shopping">Shopping da Cidade</option>
+              <option value="mirante">Mirante da cidade</option>
+            </select>
+          </div>
+          <p>Seu interesse pela cidade é como:</p>
+          <div class="input-interesse">
+            <input type="checkbox" id="turista" name="turista" checked />
+            <label for="turista">Turista</label>
+
+            <input type="checkbox" id="estudante" name="estudante" />
+            <label for="estudante">Estudante</label>
+
+            <input type="checkbox" id="residente" name="residente" />
+            <label for="residente">Residente</label>
+          </div>
+          <div class="buttons">
+            <button type="submit" class="btn-login">Login</button>
+            <button type="submit" class="btn-reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <ul class="squares"></ul>
+    <script src="./script.js"></script>
+  </body>
+</html>
